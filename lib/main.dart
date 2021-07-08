@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
       ),
       home: ChangeNotifierProvider<MenuInfo>(
         create: (context) => MenuInfo(MenuType.clock),
-        child: HomePage(),
+        child: HomePage1(),
       ),
     );
   }
