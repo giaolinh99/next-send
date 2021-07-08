@@ -1,19 +1,18 @@
 import 'package:clock_app/constants/theme_data.dart';
 import 'package:clock_app/data.dart';
 import 'package:clock_app/enums.dart';
-import 'package:clock_app/models/alarm_info.dart';
 import 'package:clock_app/models/menu_info.dart';
 import 'package:clock_app/views/alarm_page.dart';
 import 'package:clock_app/views/clock_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class HomePage1 extends StatefulWidget {
+class Linh extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage1> {
+class _HomePageState extends State<Linh> {
   TimeOfDay h = TimeOfDay(hour: 17, minute: 0);
 
   DateTime redmineTime = new DateTime(
