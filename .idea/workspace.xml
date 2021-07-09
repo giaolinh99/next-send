@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f8e0bea-e57c-426b-a064-77a19fea58fb" name="Default Changelist" comment="" />
+    <list default="true" id="4f8e0bea-e57c-426b-a064-77a19fea58fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625725738130</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sua homepage1 -&gt; linh">
+      <created>1625805702330</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625805702331</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -80,10 +90,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1324" height="840" key="AVDManager/0.0.1920.1040@0.0.1920.1040" timestamp="1625718787902" />
-    <state x="1003" y="6" key="CommitChangelistDialog2" timestamp="1625725735639">
+    <state x="1003" y="6" key="CommitChangelistDialog2" timestamp="1625805701625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1003" y="6" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1625725735639" />
+    <state x="1003" y="6" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1625805701625" />
     <state x="178" y="343" key="FileChooserDialogImpl" timestamp="1625710707099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -108,10 +118,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="583" y="167" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1625649649149" />
-    <state x="968" y="259" key="Vcs.Push.Dialog.v2" timestamp="1625725746648">
+    <state x="968" y="259" key="Vcs.Push.Dialog.v2" timestamp="1625805709659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="968" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625725746648" />
+    <state x="968" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1625805709659" />
     <state x="1118" y="256" width="583" height="566" key="find.popup" timestamp="1625802251801">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
