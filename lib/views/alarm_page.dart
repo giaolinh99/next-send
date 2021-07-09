@@ -239,7 +239,9 @@ class _AlarmPageState extends State<AlarmPage> {
                                                     Icons.arrow_forward_ios),
                                               ),
                                               FloatingActionButton.extended(
-                                                onPressed: onSaveAlarm,
+                                                onPressed: (){
+                                                  onSaveAlarm(context);
+                                                },
                                                 icon: Icon(Icons.alarm),
                                                 label: Text('Save'),
                                               ),],),);},);
@@ -311,7 +313,7 @@ class _AlarmPageState extends State<AlarmPage> {
         scheduledNotificationDateTime, platformChannelSpecifics);
   }
 
-  void onSaveAlarm() {
+  void onSaveAlarm(c) {
     DateTime scheduleAlarmDateTime;
     if (_alarmTime.isAfter(DateTime.now()))
       scheduleAlarmDateTime = _alarmTime;
@@ -325,7 +327,7 @@ class _AlarmPageState extends State<AlarmPage> {
     );
     _alarmHelper.insertAlarm(alarmInfo);
     scheduleAlarm(scheduleAlarmDateTime, alarmInfo);
-    Navigator.pop(context);
+    Navigator.pop(c);
     loadAlarms();
   }
 
