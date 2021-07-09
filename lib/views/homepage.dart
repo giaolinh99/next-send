@@ -7,12 +7,12 @@ import 'package:clock_app/views/clock_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class Linh extends StatefulWidget {
+class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<Linh> {
+class _HomePageState extends State<HomePage> {
   TimeOfDay h = TimeOfDay(hour: 17, minute: 0);
 
   DateTime redmineTime = new DateTime(
