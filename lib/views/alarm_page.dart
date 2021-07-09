@@ -15,8 +15,18 @@ class AlarmPage extends StatefulWidget {
 }
 
 class _AlarmPageState extends State<AlarmPage> {
-
+  var initializationSettingsAndroid =
+  AndroidInitializationSettings('codex_logo');
+  var initializationSettingsIOS = IOSInitializationSettings(
+      requestAlertPermission: true,
+      requestBadgePermission: true,
+      requestSoundPermission: true,
+      onDidReceiveLocalNotification:
+          (int id, String title, String body, String payload) async {});
+  var initializationSettings ;
  TimeOfDay h = TimeOfDay(hour: 17, minute: 0);
+  final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+  FlutterLocalNotificationsPlugin();
 
   DateTime redmineTime = new DateTime(
       DateTime.now().year,
@@ -30,6 +40,18 @@ class _AlarmPageState extends State<AlarmPage> {
   Future<List<AlarmInfo>> _alarms;
   List<AlarmInfo> _currentAlarms;
 
+  configNotification() async {
+    initializationSettings = InitializationSettings(
+        android: initializationSettingsAndroid, iOS: initializationSettingsIOS);
+    await flutterLocalNotificationsPlugin.initialize(initializationSettings,
+        onSelectNotification: (String payload) async {
+          if (payload != null) {
+            debugPrint('notification payload: ' + payload);
+          }
+        });
+  }
+
+
   @override
   void initState() {
     reminderLogtime();
@@ -37,6 +59,7 @@ class _AlarmPageState extends State<AlarmPage> {
     _alarmHelper.initializeDatabase().then((value) {
       print('------database intialized');
       loadAlarms();
+      configNotification();
 
     });
     super.initState();
