@@ -28,11 +28,14 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: CustomColors.pageBackgroundColor,
       body: Row(
         children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: menuItems
-                .map((currentMenuInfo) => buildMenuButton(currentMenuInfo))
-                .toList(),
+          Container(
+            width: 85,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: menuItems
+                  .map((currentMenuInfo) => buildMenuButton(currentMenuInfo))
+                  .toList(),
+            ),
           ),
           VerticalDivider(
             color: CustomColors.dividerColor,
